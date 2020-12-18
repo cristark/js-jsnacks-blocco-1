@@ -9,9 +9,7 @@ for (i = 0; i < 6; i++) {
 
     if (number % 2 != 0) {
         containerArr.push(number);
-    } else {
-
-    }
+    } 
 }
 
 console.log(containerArr);
