@@ -16,12 +16,15 @@ console.log(number);
 console.log(somma);
 
 //VARIABILE CON WHILE
-/* var i = 0;
+var numWhile, sumWhile;
+
+var i = 0;
+sumWhile = 0;
 
 while (i <= 5) {
-    number = parseFloat(prompt('Inserisci un numero:'));
+    numWhile = parseFloat(prompt('Inserisci un numero:'));
     i++;
-    somma += number;
+    sumWhile += numWhile;
 }
 
-console.log(somma); */
+console.log(sumWhile);
