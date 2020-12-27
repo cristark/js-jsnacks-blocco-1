@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Langar", cursive;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 20px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/morra_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.color_active {
+  color: #daa65a;
+}
+
+/* | SEZIONE PUNTEGGI */
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.game_title .switch_box {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch_box .switch {
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #daa65a;
+  position: relative;
+  margin: 0 10px;
+}
+
+.switch_box .switch .round_switch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.score_box {
+  width: 250px;
+  border: 2px solid #daa65a;
+  text-align: center;
+  padding: 30px;
+}
+
+.score_box.userbox {
+  border-radius: 0 30px 0 30px;
+}
+
+.score_box.cpubox {
+  border-radius: 30px 0 30px 0;
+}
+
+.score_box p {
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+/* | SEZIONE SCELTA UTENTE */
+.user_choice {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.user_choice .container.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user_choice .container.choice.user_cont .choice_box {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.user_choice .container.choice.user_cont .choice_box:hover {
+  border-style: solid;
+  background-color: #daa65a;
+}
+
+.user_choice .container.choice.cpu_cont {
+  cursor: not-allowed;
+}
+
+.container.choice .choice_box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted #daa65a;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.choice_box i {
+  font-size: 3em;
+}
+
+.user_choice .container.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user_choice .container.results h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.user_choice .container.results #final_result {
+  margin-top: 30px;
+  font-size: 3em;
+}
+
+.user_choice .container.results p {
+  margin-bottom: 20px;
+  font-size: 3em;
+}

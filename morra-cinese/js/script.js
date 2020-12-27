@@ -9,12 +9,13 @@ var rspArr = ['carta', 'forbice', 'sasso'];
 var userScore = 0;
 var cpuScore = 0;
 
-// Variabile sentinella per chiudere il ciclo while al raggiungimento del punteggio max
+// Variabili sentinella per chiudere cicli while
 var sentinel = true;
 
 while (sentinel) {
     // Creazione prompt per decisione segno UTENTE
-    var rspUserChoice = prompt('Scegli tra carta, forbice o sasso');
+    var userText = prompt('Scegli tra carta, forbice o sasso');
+    var rspUserChoice = userText.toLowerCase();
     console.log('UTENTE sceglie: ' + rspUserChoice);
 
     // Assegnazione random segno CPU

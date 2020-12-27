@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morra Cinese JS</title>
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <!-- Link foglio di stile personale -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
+    <!-- | MAIN -->
+    <main>
+
+        <!-- Sezione punteggi -->
+        <section class="scores">
+            <!-- Sezione relativa al punteggio Utente -->
+            <div class="score_box userbox">
+                <h2 id="user_name">Cristiano</h2>
+                <p id="score_user">2</p>
+            </div>
+    
+            <div class="game_title">
+
+                <!-- Box di cambio modalità gioco -->
+                <div class="switch_box">
+                    <p class="color_active">Classic</p>
+                    <div class="switch">
+                        <div class="round_switch"></div>
+                    </div>
+                    <p>Special Edition</p>
+                </div>
+
+                <!-- TITOLO GIOCO -->
+                <h1>Morra Cinese</h1>
+            </div>
+    
+            <!-- Sezione relativa al punteggio CPU -->
+            <div class="score_box cpubox">
+                <h2>CPU</h2>
+                <p id="score_cpu">1</p>
+            </div>
+        </section>
+
+        <!-- Sezione scelta Utente -->
+        <section class="user_choice">
+
+            <!-- Container scelte Utente -->
+            <div class="container choice user_cont">
+                <div class="choice_box">
+                    <i class="far fa-hand-rock"></i>
+                </div>
+                <div class="choice_box">
+                    <i class="far fa-hand-paper"></i>
+                </div>
+                <div class="choice_box">
+                    <i class="far fa-hand-scissors"></i>
+                </div>
+            </div>
+
+            <div class="container results">
+                <h2>Cristiano sceglie:</h2>
+                <p>Sasso</p>
+                <h2>CPU sceglie:</h2>
+                <p>Carta</p>
+                <h2 id="final_result">Hai vinto!</h2>
+            </div>
+
+            <!-- Container scelte CPU -->
+            <div class="container choice cpu_cont">
+                <div class="choice_box">
+                    <i class="far fa-hand-rock"></i>
+                </div>
+                <div class="choice_box">
+                    <i class="far fa-hand-paper"></i>
+                </div>
+                <div class="choice_box">
+                    <i class="far fa-hand-scissors"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link Javascript -->
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
