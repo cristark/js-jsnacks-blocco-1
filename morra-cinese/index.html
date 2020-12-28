@@ -20,8 +20,8 @@
         <section class="scores">
             <!-- Sezione relativa al punteggio Utente -->
             <div class="score_box userbox">
-                <h2 id="user_name">Cristiano</h2>
-                <p id="score_user">2</p>
+                <h2 id="user_name"></h2>
+                <p id="score_user">0</p>
             </div>
     
             <div class="game_title">
@@ -42,7 +42,7 @@
             <!-- Sezione relativa al punteggio CPU -->
             <div class="score_box cpubox">
                 <h2>CPU</h2>
-                <p id="score_cpu">1</p>
+                <p id="score_cpu">0</p>
             </div>
         </section>
 
@@ -51,23 +51,23 @@
 
             <!-- Container scelte Utente -->
             <div class="container choice user_cont">
-                <div class="choice_box">
+                <div id="rock" class="choice_box">
                     <i class="far fa-hand-rock"></i>
                 </div>
-                <div class="choice_box">
+                <div id="paper" class="choice_box">
                     <i class="far fa-hand-paper"></i>
                 </div>
-                <div class="choice_box">
+                <div id="scissors" class="choice_box">
                     <i class="far fa-hand-scissors"></i>
                 </div>
             </div>
 
             <div class="container results">
                 <h2>Cristiano sceglie:</h2>
-                <p>Sasso</p>
+                <p id="user_choice">-</p>
                 <h2>CPU sceglie:</h2>
-                <p>Carta</p>
-                <h2 id="final_result">Hai vinto!</h2>
+                <p id="cpu_choice">-</p>
+                <h2 id="final_result">-</h2>
             </div>
 
             <!-- Container scelte CPU -->
@@ -85,7 +85,9 @@
         </section>
     </main>
 
-    <!-- Link Javascript -->
+    <!-- Link Javascript - LATO HTML -->
+    <script src="js/graph_script.js"></script>
+    <!-- Link Javascript - LATO CONSOLE -->
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
