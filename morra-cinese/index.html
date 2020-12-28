@@ -20,15 +20,17 @@
         <section class="scores">
             <!-- Sezione relativa al punteggio Utente -->
             <div class="score_box userbox">
-                <h2 id="user_name"></h2>
+                <h2>UTENTE</h2>
                 <p id="score_user">0</p>
             </div>
     
+            <!-- Sezione centrale con Pulsanti e Titolo -->
             <div class="game_title">
 
                 <!-- Box di cambio modalità gioco -->
                 <div class="buttons">
 
+                    <!-- Switch attivazione Versione Speciale gioco -->
                     <div class="switch_box">
                         <p class="color_active">Classic</p>
                         <div class="switch">
@@ -37,6 +39,7 @@
                         <p>Special Edition</p>
                     </div>
 
+                    <!-- !Bottone RESET parametri di gioco -->
                     <div class="reset_box">
                         <div id="game_reset" class="reset">
                             <i class="fas fa-power-off"></i>
@@ -46,7 +49,10 @@
                 </div>
 
                 <!-- TITOLO GIOCO -->
-                <h1>Morra Cinese</h1>
+                <div class="title">
+                    <h1>Morra Cinese</h1>
+                    <p>Benvenuto! Clicca sul simbolo che scegli di giocare, relativo alla colonna sotto il tuo nome. La vittoria verrà assegnata a colui che arrivera per primo a 4 p.ti! Premi il tasto RESET in alto per ricominciare la partita. BUON DIVERTIMENTO!</p>
+                </div>
             </div>
     
             <!-- Sezione relativa al punteggio CPU -->
@@ -60,7 +66,7 @@
         <section class="user_choice">
 
             <!-- Container scelte Utente -->
-            <div class="container choice user_cont mr-15">
+            <div class="container choice user_cont mr-25">
                 <div id="rock" class="choice_box">
                     <i class="far fa-hand-rock"></i>
                 </div>
@@ -73,7 +79,7 @@
             </div>
 
             <div class="container results">
-                <h2>Cristiano sceglie:</h2>
+                <h2>UTENTE sceglie:</h2>
                 <p id="user_choice">-</p>
                 <h2>CPU sceglie:</h2>
                 <p id="cpu_choice">-</p>
@@ -81,7 +87,7 @@
             </div>
 
             <!-- Container scelte CPU -->
-            <div class="container choice cpu_cont ml-15">
+            <div class="container choice cpu_cont ml-25">
                 <div class="choice_box">
                     <i class="far fa-hand-rock"></i>
                 </div>

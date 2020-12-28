@@ -28,25 +28,29 @@ main {
   color: #daa65a;
 }
 
-.ml-15 {
-  margin-left: 15px;
+.ml-25 {
+  margin-left: 25px;
 }
 
-.mr-15 {
-  margin-right: 15px;
+.mr-25 {
+  margin-right: 25px;
 }
 
 /* | SEZIONE PUNTEGGI */
 .scores {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 30px;
+}
+
+.scores .game_title {
+  margin: 0 60px;
 }
 
 .game_title .buttons {
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -85,6 +89,10 @@ main {
   text-align: center;
   line-height: 25px;
   cursor: pointer;
+}
+
+.game_title .title p {
+  width: 760px;
 }
 
 .score_box {

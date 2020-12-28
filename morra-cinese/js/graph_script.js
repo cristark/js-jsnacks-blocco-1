@@ -12,14 +12,8 @@ var rspResult;
 // Variabile per capire chi è il vincitore della partita
 var rspMessagge;
 
-// Prompt inserimento nome utente
-var username = prompt('Inserisci il tuo nome di gioco:');
-document.getElementById('user_name').innerHTML = username;
-
-
 // | SASSO 
-var rockButton = document.getElementById("rock");
-rockButton.addEventListener("click", function() {
+document.getElementById("rock").addEventListener("click", function() {
 
     // Scelta Utente
     var rspUserChoice = 'sasso';
@@ -36,11 +30,11 @@ rockButton.addEventListener("click", function() {
     // Confronto risultato partita con scelta utente
     if (rspResult == rspUserChoice) {
         rspMessagge = 'HAI VINTO!';
-        userScore += 1;
+        userScore++;
         document.getElementById('score_user').innerHTML = userScore;
     }   else if (rspResult == rspCpuChoice) {
         rspMessagge = 'HAI PERSO!';
-        cpuScore += 1;
+        cpuScore++;
         document.getElementById('score_cpu').innerHTML = cpuScore;
     }   else {
         rspMessagge = 'Parità';
@@ -50,14 +44,13 @@ rockButton.addEventListener("click", function() {
     document.getElementById('final_result').innerHTML = rspMessagge;
 
     //Funzione per decretare vincitore finale in base al punteggio
-    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 5);
+    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 4);
     document.getElementById('final_message').innerHTML = finalMex;
 
 });
 
 // | CARTA
-var paperButton = document.getElementById("paper");
-paperButton.addEventListener("click", function() {
+document.getElementById("paper").addEventListener("click", function() {
 
     // Scelta Utente
     var rspUserChoice = 'carta';
@@ -88,14 +81,13 @@ paperButton.addEventListener("click", function() {
     document.getElementById('final_result').innerHTML = rspMessagge;
 
     //Funzione per decretare vincitore finale in base al punteggio
-    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 5);
+    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 4);
     document.getElementById('final_message').innerHTML = finalMex;
 
 });
 
 // | FORBICE
-var scissorsButton = document.getElementById("scissors");
-scissorsButton.addEventListener("click", function() {
+document.getElementById("scissors").addEventListener("click", function() {
 
     // Scelta Utente
     var rspUserChoice = 'forbice';
@@ -126,14 +118,13 @@ scissorsButton.addEventListener("click", function() {
     document.getElementById('final_result').innerHTML = rspMessagge;
 
     //Funzione per decretare vincitore finale in base al punteggio
-    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 5);
+    var finalMex = getFinalResult(userScore, cpuScore, finalMex, 4);
     document.getElementById('final_message').innerHTML = finalMex;
 
 });
 
 // ! RESET BUTTON
-var resetButton = document.getElementById("game_reset");
-resetButton.addEventListener("click", function() {
+document.getElementById("game_reset").addEventListener("click", function() {
 
     userScore = 0;
     cpuScore = 0;
