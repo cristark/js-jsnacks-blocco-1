@@ -27,12 +27,22 @@
             <div class="game_title">
 
                 <!-- Box di cambio modalità gioco -->
-                <div class="switch_box">
-                    <p class="color_active">Classic</p>
-                    <div class="switch">
-                        <div class="round_switch"></div>
+                <div class="buttons">
+
+                    <div class="switch_box">
+                        <p class="color_active">Classic</p>
+                        <div class="switch">
+                            <div class="round_switch"></div>
+                        </div>
+                        <p>Special Edition</p>
                     </div>
-                    <p>Special Edition</p>
+
+                    <div class="reset_box">
+                        <div id="game_reset" class="reset">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <p>Reset</p>
+                    </div>
                 </div>
 
                 <!-- TITOLO GIOCO -->
@@ -50,7 +60,7 @@
         <section class="user_choice">
 
             <!-- Container scelte Utente -->
-            <div class="container choice user_cont">
+            <div class="container choice user_cont mr-15">
                 <div id="rock" class="choice_box">
                     <i class="far fa-hand-rock"></i>
                 </div>
@@ -71,7 +81,7 @@
             </div>
 
             <!-- Container scelte CPU -->
-            <div class="container choice cpu_cont">
+            <div class="container choice cpu_cont ml-15">
                 <div class="choice_box">
                     <i class="far fa-hand-rock"></i>
                 </div>
@@ -83,10 +93,15 @@
                 </div>
             </div>
         </section>
+
+        <section class="final_mex">
+            <h2 id="final_message"></h2>
+        </section>
     </main>
 
     <!-- Link Javascript - LATO HTML -->
     <script src="js/graph_script.js"></script>
+
     <!-- Link Javascript - LATO CONSOLE -->
     <!-- <script src="js/script.js"></script> -->
 </body>
