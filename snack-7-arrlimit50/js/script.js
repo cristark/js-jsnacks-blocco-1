@@ -12,10 +12,16 @@ var i = 0;
 while (sentinel) {  
     
     var number = parseInt(prompt('Inserisci un numero:'));  
-    numbersArr.push(number)
-    console.log(numbersArr);
-    somma += numbersArr[i];
-    console.log(somma);
+
+    if (isNaN(number)) {
+        alert('DEVI INSERIRE UN NUMERO!')
+    } else {
+        numbersArr.push(number)
+        console.log(numbersArr);
+        somma += number;
+        console.log(somma);
+    }
+
 
     if (somma >= 50) {
         sentinel = false;
